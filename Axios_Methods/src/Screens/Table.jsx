@@ -11,6 +11,7 @@ import { Navigate } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import EditOutlinedIcon from '@mui/icons-material/EditOutlined';
 import DeleteIcon from '@mui/icons-material/Delete';
+import axios from 'axios';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -41,6 +42,16 @@ export default function CustomizedTables({Users_data}) {
 
     const navigate = useNavigate("")
 
+    let delUser = (id) => {
+      axios
+        .delete(`http://localhost:3000/users/${id}`)
+        .then((res) => {
+          alert('User Delete Successfully')
+          window.location.reload();
+        })
+        .catch((error) => console.log(error));
+    }
+
   return (
       <TableContainer component={Paper}>
         <Button
@@ -61,7 +72,7 @@ export default function CustomizedTables({Users_data}) {
         </TableHead>
         <TableBody>
           {Users_data.map((row, i) => (
-            <StyledTableRow key={row.i}>
+            <StyledTableRow key={i}>
               <StyledTableCell component="th" scope="row">
                 {row.id}
               </StyledTableCell>              
@@ -70,8 +81,8 @@ export default function CustomizedTables({Users_data}) {
               <StyledTableCell align="left">{row.phone}</StyledTableCell>
               <StyledTableCell align="left">{row.website}</StyledTableCell>
               <StyledTableCell align="left">
-                <EditOutlinedIcon sx={{color: "blue", cursor: "pointer", marginRight:2}}/>
-                <DeleteIcon sx={{color: "red", cursor: "pointer"}} />
+                <EditOutlinedIcon onClick={(e) => navigate(`/set-user/${row.id}`)} sx={{color: "blue", cursor: "pointer", marginRight:2}}/>
+                <DeleteIcon onClick={(e) => delUser(row.id)} sx={{color: "red", cursor: "pointer"}} />
               </StyledTableCell>
 
             </StyledTableRow>

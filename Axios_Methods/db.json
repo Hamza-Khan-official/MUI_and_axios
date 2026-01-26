@@ -1,52 +1,6 @@
 {
   "users": [
     {
-      "id": "1",
-      "name": "Leanne Graham",
-      "username": "Bret",
-      "email": "Sincere@april.biz",
-      "address": {
-        "street": "Kulas Light",
-        "suite": "Apt. 556",
-        "city": "Gwenborough",
-        "zipcode": "92998-3874",
-        "geo": {
-          "lat": "-37.3159",
-          "lng": "81.1496"
-        }
-      },
-      "phone": "1-770-736-8031 x56442",
-      "website": "hildegard.org",
-      "company": {
-        "name": "Romaguera-Crona",
-        "catchPhrase": "Multi-layered client-server neural-net",
-        "bs": "harness real-time e-markets"
-      }
-    },
-    {
-      "id": "2",
-      "name": "Ervin Howell",
-      "username": "Antonette",
-      "email": "Shanna@melissa.tv",
-      "address": {
-        "street": "Victor Plains",
-        "suite": "Suite 879",
-        "city": "Wisokyburgh",
-        "zipcode": "90566-7771",
-        "geo": {
-          "lat": "-43.9509",
-          "lng": "-34.4618"
-        }
-      },
-      "phone": "010-692-6593 x09125",
-      "website": "anastasia.net",
-      "company": {
-        "name": "Deckow-Crist",
-        "catchPhrase": "Proactive didactic contingency",
-        "bs": "synergize scalable supply-chains"
-      }
-    },
-    {
       "id": "3",
       "name": "Clementine Bauch",
       "username": "Samantha",
@@ -72,7 +26,7 @@
     {
       "id": "4",
       "name": "Patricia Lebsack",
-      "username": "Karianne",
+      "username": "Lobard",
       "email": "Julianne.OConner@kory.org",
       "address": {
         "street": "Hoeger Mall",
@@ -231,12 +185,28 @@
       }
     },
     {
-      "id": "8f2b",
-      "name": "Hamza",
-      "username": "Hamza00",
-      "email": "kh.hamza56789@gmail.com",
-      "phone": "03101169864",
-      "website": "Hamza"
+      "id": "9a00",
+      "name": "legend",
+      "username": "legend2.0",
+      "email": "legend@gmail.com",
+      "phone": "012645656489189",
+      "website": "legend.org"
+    },
+    {
+      "id": "bcfa",
+      "name": "John",
+      "username": "Johnabraham",
+      "email": "Johnabraham@gmail.com",
+      "phone": "03111447885896885784478",
+      "website": "Johnabraham.org"
+    },
+    {
+      "id": "beac",
+      "name": "John",
+      "username": "JohnSena",
+      "email": "JohnSena@gmail.com",
+      "phone": "459648/4654/94564",
+      "website": "JohnSena.org"
     }
   ]
 }
